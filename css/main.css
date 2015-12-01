@@ -639,7 +639,7 @@ ul.sub-menu {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  margin-top: 23px;
+  margin-top: 10px;
 }
 
 
@@ -842,6 +842,16 @@ h2.title:before{
 	overflow:hidden;
 }
 
+a.link{
+  color: #E50325;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: static;
+}
 
 h2.title {
   color: #E50325;
@@ -851,7 +861,7 @@ h2.title {
   margin: 0 15px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  position: relative;
+  position: static;
 }
 
 .product-image-wrapper{

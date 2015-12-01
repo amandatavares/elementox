@@ -13,250 +13,278 @@
     <link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/ico/icon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+    <script type="text/javascript">
+      $(function(){
+        $.ajax({
+          type:"get",
+          url: "header.html",
+          success:function(a){
+            $('#header').empty().append(a);
+          }
+        });
+        $.ajax({
+          type:"get",
+          url:"footer.html",
+          success:function(b){
+            $('#footer').empty().append(b);
+          }
+        });
+        $.ajax({
+          type:"get",
+          url:"left-sidebar.html",
+          success:function(c){
+            $('#left-sidebar').empty().append(c);
+          }
+        });
 
-<body>
-	<header id="header"><!--header-->
-    <div class="header_top"><!--header_top-->
-      <div class="container">
-        <div class="row" style="background-color: #000;">
-          <div class="col-sm-6">
-            <div class="contactinfo">
-              <ul class="nav nav-pills">
-                <li><a href="#"><i class="fa fa-phone"></i> +55 85 </a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> elementox@gmail.com</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="social-icons pull-right">
-              <ul class="nav navbar-nav">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!--/header_top-->
+      })
+    </script>
+  </head><!--/head-->
 
-    <div class="header-middle"><!--header-middle-->
-      <div class="container" style="border-right-style: solid; border-left-style: solid;">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="logo pull-left">
-              <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
-            </div>
-            <div class="btn-group pull-right">
-              <div class="btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                  Brasil
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">USA</a></li>
-                  <li><a href="#">Canada</a></li>
-                  <li><a href="#">UK</a></li>
-                </ul>
-              </div>
+  <!--Alterar main.css e pôr cores para vermelho!!
+  Deixar o preto #000!  -->
+  <body>
+  <div class="container">
 
-              <div class="btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                  Real
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Dolar</a></li>
-                  <li><a href="#">Canadian Dollar</a></li>
-                  <li><a href="#">Pound</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <div class="shop-menu pull-right">
-              <ul class="nav navbar-nav">
-                <li><a href="#"><i class="fa fa-user"></i> Conta</a></li>
-                <li><a href="#"><i class="fa fa-star"></i> Lista de Desejos</a></li>
-                <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
-                <li><a href="login.html"><i class="fa fa-lock"></i> Entrar</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!--/header-middle-->
-
-    <!--header-bottom-->
-			<div class="container">
-				<div class="row" id="header-bottom" style="background-color: #000;">
-					<div class="col-sm-8">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Navegação responsiva</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Início</a></li>
-								<li class="dropdown"><a href="#">Compras<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Produtos</a></li>
-										<li><a href="product-details.html">Detalhes dos produtos</a></li>
-										<li><a href="checkout.html">Checkout</a></li>
-										<li><a href="cart.html">Carrinho</a></li>
-										<li><a href="login.html">Entrar</a></li>
-                                    </ul>
-                                </li>
-								<li class="dropdown"><a href="#">Marcas<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                      <li><a href="#">Elemento-X</a></li>
-                                      <li><a href="blog.html">Importadas</a></li>
-										<li><a href="#">Natura</a></li>
-                    <li><a href="#">Boticário</a></li>
-
-                                    </ul>
-                                </li>
-								<!-- <li><a href="404.html">404</a></li> -->
-                <li><a href="#">Famílias olfativas</a></li>
-								<li><a href="contact-us.html">Contate-nos</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Digite a marca ou o produto desejado"/>
-              <a href="#"><img src="../EleX/images/home/searchicon.png"></a>    <!--Faça ficar funcional!!!-->
-						</div>
-					</div>
-				</div>
-			</div>
-		<!--/header-bottom-->
-	</header>
+    <header id="header"><!--header-->
+    </header><!--/header-->
 
 	<section id="advertisement">
 		<div class="container">
       <br>
-			<img src="images/shop/advertisement.png" alt="" />
+			<img src="images/shop/adsnatal.jpg" alt="" />
 		</div>
 	</section>
 
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-2">
-          <div class="left-sidebar">
-						<h2>Categorias</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Perfumes Importados Femininos
-										</a>
-									</h4>
-								</div>
-								<div id="mens" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
-											<li><a href="#">Armani</a></li>
-											<li><a href="#">Prada</a></li>
-											<li><a href="#">Dolce and Gabbana</a></li>
-											<li><a href="#">Chanel</a></li>
-											<li><a href="#">Gucci</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-              <div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Perfumes Nacionais Femininos</a></h4>
-								</div>
-							</div>
-              <div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Perfumes by Elemento-X</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Perfumes Infantis
-										</a>
-									</h4>
-								</div>
-								<div id="womens" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
+        <div class="col-sm-2">
+					<div class="left-sidebar" id="left-sidebar">
 
-						</div><!--/category-products-->
-
-            <div class="brands_products"><!--brands_products-->
-							<h2>Marcas</h2>
-							<div class="brands-name">
-								<ul class="nav nav-pills nav-stacked">
-									<li><a href="#"> <span class="pull-right">(50)</span>Acne</a></li>
-									<li><a href="#"> <span class="pull-right">(56)</span>Grüne Erde</a></li>
-									<li><a href="#"> <span class="pull-right">(27)</span>Albiro</a></li>
-									<li><a href="#"> <span class="pull-right">(32)</span>Ronhill</a></li>
-									<li><a href="#"> <span class="pull-right">(5)</span>Oddmolly</a></li>
-									<li><a href="#"> <span class="pull-right">(9)</span>Boudestijn</a></li>
-									<li><a href="#"> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
-								</ul>
-							</div>
-						</div><!--/brands_products-->
-
-						<div class="price-range"><!--price-range-->
-							<h2>Faixa de preço</h2>
-							<div class="well">
-								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" style="100%"><br />
-								 <b>$ 0</b> <b class="pull-right">$ 600</b>
-							</div>
-						</div><!--/price-range-->
-
-						<div class="shipping text-center"><!--shipping-->
-							<img style="width:100%;" src="images/home/shipping.jpg" alt="" />
-						</div><!--/shipping-->
-
-					</div>
+					</div> <!-- /left-sidebar -->
 				</div>
 
 				<div class="col-sm-10 padding-right">
 					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Elemento X</h2>
+						<h2 class="title text-center" id="elementox">Elemento X</h2>
+            <h2 class="title text-center" id="boticario">Boticário</h2>
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/floratta.jpg" alt="" />
+                    <h2>R$ 99,90</h2>
+                    <p>Floratta in Rose</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 99,90</h2>
+                      <p>Floratta in Rose</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/acordes.jpg" alt="" />
+                    <h2>R$ 58,90</h2>
+                    <p>Acordes</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 58,90</h2>
+                      <p>Acordes</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/glamour.jpg" alt="" />
+                    <h2>R$ 79,90</h2>
+                    <p>Glamour</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 79,90</h2>
+                      <p>Glamour</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/linda.jpg" alt="" />
+                    <h2>R$ 89,90</h2>
+                    <p>Linda</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 89,90</h2>
+                      <p>Linda</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                  <img src="images/home/new.png" class="new" alt="" />
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/elysee.jpg" alt="" />
+                    <h2>R$ 99,90</h2>
+                    <p>Elysee Eau de Parfum</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 99,90</h2>
+                      <p>Elysee Eau de Parfum</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/oopss.jpg" alt="" />
+                    <h2>R$ 58,90</h2>
+                    <p>Oopss!</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 58,90</h2>
+                      <p>Oopss!</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/coffee.jpg" alt="" />
+                    <h2>R$ 79,90</h2>
+                    <p>Coffee Woman</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 79,90</h2>
+                      <p>Coffee Woman</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/shop/boticario/nativa.jpg" alt="" />
+                    <h2>R$ 89,90</h2>
+                    <p>Colônias Nativa SPA</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>R$ 89,90</h2>
+                      <p>Colônias Nativa SPA</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                  <img src="images/home/new.png" class="new" alt="" />
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="title text-center" id="jequiti">Jequiti</h2>
             <div class="col-sm-3">
               <div class="product-image-wrapper">
                 <div class="single-products">
@@ -264,20 +292,20 @@
                     <img src="images/shop/jequiti/claudia.jpg" alt="" />
                     <h2>R$ 99,90</h2>
                     <p>Colônia Claudia Leitte</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 99,90</h2>
                       <p>Colônia Claudia Leitte</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
@@ -289,24 +317,25 @@
                     <img src="images/shop/jequiti/bemquer.jpg" alt="" />
                     <h2>R$ 58,90</h2>
                     <p>Bem-Me-Quer com Magia</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 58,90</h2>
                       <p>Bem-Me-Quer com Magia</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
             </div>
+
             <div class="col-sm-3">
               <div class="product-image-wrapper">
                 <div class="single-products">
@@ -314,100 +343,20 @@
                     <img src="images/shop/jequiti/playboy.jpg" alt="" />
                     <h2>R$ 79,90</h2>
                     <p>Super PlayBoy</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 79,90</h2>
                       <p>Super PlayBoy</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
-            <h2 class="title text-center">Boticário</h2>
-
-            <h2 class="title text-center">Jequiti</h2>
-            <div class="col-sm-3">
-              <div class="product-image-wrapper">
-                <div class="single-products">
-                  <div class="productinfo text-center">
-                    <img src="images/shop/jequiti/claudia.jpg" alt="" />
-                    <h2>R$ 99,90</h2>
-                    <p>Colônia Claudia Leitte</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <h2>R$ 99,90</h2>
-                      <p>Colônia Claudia Leitte</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="choose">
-                  <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="product-image-wrapper">
-                <div class="single-products">
-                  <div class="productinfo text-center">
-                    <img src="images/shop/jequiti/bemquer.jpg" alt="" />
-                    <h2>R$ 58,90</h2>
-                    <p>Bem-Me-Quer com Magia</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <h2>R$ 58,90</h2>
-                      <p>Bem-Me-Quer com Magia</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="choose">
-                  <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="product-image-wrapper">
-                <div class="single-products">
-                  <div class="productinfo text-center">
-                    <img src="images/shop/jequiti/playboy.jpg" alt="" />
-                    <h2>R$ 79,90</h2>
-                    <p>Super PlayBoy</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                  </div>
-                  <div class="product-overlay">
-                    <div class="overlay-content">
-                      <h2>R$ 79,90</h2>
-                      <p>Super PlayBoy</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="choose">
-                  <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
@@ -419,21 +368,21 @@
                     <img src="images/shop/jequiti/eliana.jpg" alt="" />
                     <h2>R$ 89,90</h2>
                     <p>Colônia Eliana</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 89,90</h2>
                       <p>Colônia Eliana</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                   <img src="images/home/new.png" class="new" alt="" />
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
@@ -445,21 +394,21 @@
                     <img src="images/shop/jequiti/flora.jpg" alt="" />
                     <h2>R$ 85,50</h2>
                     <p>Florasense</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 85,50</h2>
                       <p>Florasense</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                   <img src="images/home/sale.png" class="new" alt="" />
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
@@ -471,20 +420,20 @@
                     <img src="images/shop/jequiti/malte.jpg" alt="" />
                     <h2>R$ 96,90</h2>
                     <p>Malte Blend</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 96,90</h2>
                       <p>Malte Blend</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
@@ -497,20 +446,20 @@
                     <img src="images/shop/jequiti/maria.jpg" alt="" />
                     <h2>R$ 55,90</h2>
                     <p>Maria Manhã</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 55,90</h2>
                       <p>Maria Manhã</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
@@ -523,25 +472,24 @@
                     <img src="images/shop/jequiti/uzon.jpg" alt="" />
                     <h2>R$ 89,90</h2>
                     <p>Uzon Fire</p>
-                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                   </div>
                   <div class="product-overlay">
                     <div class="overlay-content">
                       <h2>R$ 89,90</h2>
                       <p>Uzon Fire</p>
-                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="choose">
                   <ul class="nav nav-pills nav-justified">
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+                    <li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-
 
             <h2 class="title text-center" id="importados">Importados</h2>
 						<div class="col-sm-3">
@@ -551,20 +499,20 @@
 										<img src="images/shop/internacional/missdior.jpg" alt="" />
 										<h2>R$ 259,90</h2>
 										<p>Miss Dior by Dior</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 179,90</h2>
   										<p>Miss Dior by Dior</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -576,20 +524,20 @@
 										<img src="images/shop/internacional/ninaricci.jpg" alt="" />
 										<h2>R$ 159,90</h2>
 										<p>L'Elixir by Nina Ricci</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 159,90</h2>
   										<p>L'Elixir by Nina Ricci</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -601,20 +549,20 @@
 										<img src="images/shop/internacional/theone.jpg" alt="" />
 										<h2>R$ 268,90</h2>
 										<p>The One by Dolce & Gabanna</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 268,90</h2>
   										<p>The One by Dolce & Gabanna</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -626,21 +574,21 @@
 										<img src="images/shop/internacional/anaisanais.jpg" alt="" />
 										<h2>R$ 194,90</h2>
 										<p>Anais Anais by Cacharel</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 194,90</h2>
   										<p>Anais Anais by Cacharel</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 									<img src="images/home/new.png" class="new" alt="" />
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -652,21 +600,21 @@
 										<img src="images/shop/internacional/poison.jpg" alt="" />
 										<h2>R$ 159,90</h2>
 										<p>Poison by Dior</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 249,90</h2>
   										<p>Poison by Dior</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 									<img src="images/home/sale.png" class="new" alt="" />
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -678,20 +626,20 @@
 										<img src="images/shop/internacional/midnight.jpg" alt="" />
 										<h2>R$ 179,90</h2>
 										<p>Midnight Poison</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 179,90</h2>
   										<p>Midnight Poison by Dior</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -704,20 +652,20 @@
 										<img src="images/shop/internacional/ladygaga.jpg" alt="" />
 										<h2>R$ 129,90</h2>
 										<p>Fame by Lady Gaga</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 129,90</h2>
   										<p>Fame by Lady Gaga</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -730,20 +678,20 @@
 										<img src="images/shop/internacional/212.jpg" alt="" />
 										<h2>R$ 219,90</h2>
 										<p>212 Sexy by Carolina Herrera</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 219,90</h2>
   										<p>212 Sexy by Carolina Herrera</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -757,20 +705,20 @@
 										<img src="images/shop/natura/una.jpg" alt="" />
 										<h2>R$ 179,00</h2>
 										<p>Una Deo Parfum</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 179,00</h2>
   										<p>Una Deo Parfum</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -783,20 +731,20 @@
 										<img src="images/shop/natura/kriska.jpg" alt="" />
 										<h2>R$ 79,80</h2>
 										<p>Kriska Liberdade</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 79,80</h2>
   										<p>Kriska Liberdade</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -809,20 +757,20 @@
 										<img src="images/shop/natura/essencial.jpg" alt="" />
 										<h2>R$ 179,80</h2>
 										<p>Essencial Exclusivo Feminino</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 179,80</h2>
   										<p>Essencial Exclusivo Feminino</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -834,21 +782,21 @@
 									<div class="productinfo text-center">
 										<img src="images/shop/natura/faces.jpg" alt="" />
 										<h2>R$ 78,80</h2>
-										<p>Colônia Faces SuperEstilo ou Ousada</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<p>Colônias Faces</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 78,80</h2>
-  										<p>Colônia Faces SuperEstilo ou Ousada</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+  										<p>Colônias Faces</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -861,20 +809,20 @@
 										<img src="images/shop/natura/amo.jpg" alt="" />
 										<h2>R$ 108,00</h2>
 										<p>Linha Amó de Natura</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 108,00</h2>
   										<p>Linha Amó de Natura</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -887,20 +835,20 @@
 										<img src="images/shop/natura/biografia.jpg" alt="" />
 										<h2>R$ 99,80</h2>
 										<p>Biografia Feminino</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
                       <h2>R$ 99,80</h2>
   										<p>Biografia Feminino</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
@@ -910,55 +858,56 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/shop/natura/mate verde.jpg" alt="" />
-										<h2>R$ 79,80</h2>
-										<p>Ekos Folhas de Mate</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<img src="images/shop/natura/revelar.jpg" alt="" />
+										<h2>R$ 112,00</h2>
+										<p>Revelar Noite</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-                      <h2>R$ 79,80</h2>
-  										<p>Ekos Folhas de Mate</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <h2>R$ 112,00</h2>
+  										<p>Revelar Noite</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-sm-3">
+
+            <div class="col-sm-3">
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/shop/natura/vovo.jpg" alt="" />
-										<h2>R$ 87,50</h2>
-										<p>Colônia Vôvó Feminino</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+										<img src="images/shop/natura/luna.jpg" alt="" />
+										<h2>R$ 119,00</h2>
+										<p>Luna de Natura</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-                      <h2>R$ 87,50</h2>
-  										<p>Colônia Vôvó Feminino</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <h2>R$ 119,00</h2>
+  										<p>Luna de Natura</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Adicionar ao carrinho</a>
 										</div>
 									</div>
 								</div>
 								<div class="choose">
 									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Desejo!</a></li>
+										<li><a href=""><i class="fa fa-plus-square"></i>Comparar item</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 
-
+            <br>
 						<ul class="pagination">
 							<li class="active"><a href="">1</a></li>
 							<li><a href="">2</a></li>
@@ -971,160 +920,9 @@
 		</div>
 	</section>
 
-	<footer id="footer"><!--Footer-->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="companyinfo">
-							<h2><span>e</span>-shopper</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
-						</div>
-					</div>
-					<div class="col-sm-7">
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe1.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
+  <footer id="footer"><!--Footer-->
 
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe2.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe4.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-					</div>
-          <div class="col-sm-3">
-						<div class="address">
-							<img src="images/home/map.png" alt="" />
-							<p>Avenida Treze de Maio, 2081 - Benfica, Fortaleza - CE</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-widget">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Serviços</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Ajuda Online</a></li>
-								<li><a href="#">Fale conosco</a></li>
-								<li><a href="#">Status do pedido</a></li>
-								<li><a href="#">Mudar localização</a></li>
-								<li><a href="#">FAQ’s</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Loja rápida</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Elemento X</a></li>
-                <li><a href="#">Ivone</a></li>
-								<li><a href="#">Natura</a></li>
-								<li><a href="#">Boticário</a></li>
-								<li><a href="#">Cartões-presente</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Política</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Termos de Uso</a></li>
-								<li><a href="#">Política de Privacidade</a></li>
-								<li><a href="#">Politica de Reembolso</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Sobre Elemento X</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Quem somos</a></li>
-								<li><a href="#">Loja Matriz</a></li>
-								<li><a href="#">Programa de Afiliação</a></li>
-								<li><a href="#">Direitos Autorais</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-						<div class="single-widget">
-							<h2>Sobre Elemento X</h2>
-							<form action="#" class="searchform">
-								<input type="text" placeholder="Your email address" />
-								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
-								<p>Inscreva-se no nosso site e <br />receba as atualizações!</p>
-							</form>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<p class="pull-left">Copyright © 2015 Elemento-X S.A. Todos os direitos reservados.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
-				</div>
-			</div>
-		</div>
-
-	</footer><!--/Footer-->
+  </footer><!--/Footer-->
 
 
 
