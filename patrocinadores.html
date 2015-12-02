@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="MP Soluções">
+    <title>Sobre nós | Elemento X</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript">
+      $(function(){
+        $.ajax({
+          type:"get",
+          url: "header.html",
+          success:function(e){
+            $('#header').empty().append(e);
+          }
+        });
+        $.ajax({
+          type:"get",
+          url:"footer.html",
+          success:function(e){
+            $('#footer').empty().append(e);
+          }
+        });
+        $.ajax({
+          type:"get",
+          url:"left-sidebar.html",
+          success:function(c){
+            $('#left-sidebar').empty().append(c);
+          }
+        });
+      })
+    </script>
+</head><!--/head-->
+
+<!--Alterar main.css e pôr cores para vermelho!!
+Deixar o preto #000!  -->
+<body>
+  <div class="container">
+
+    <header id="header"><!--header-->
+    </header><!--/header-->
+
+  <section>
+		<div class="container">
+			<div class="row">
+        <div class="col-sm-2">
+					<div class="left-sidebar" id="left-sidebar">
+
+					</div> <!-- /left-sidebar -->
+				</div>
+
+				<div class="col-sm-10">
+					<div class="blog-post-area">
+            <br>
+						<h2 class="title text-center">PATROCINADORES ELEMENTO X</h2>
+						<div class="single-blog-post">
+							<h3>Empresas</h3>
+							<div class="post-meta">
+								<ul>
+									<li><i class="fa fa-user"></i> Equipe Rocket</li>
+									<li><i class="fa fa-clock-o"></i> 11:45 am</li>
+									<li><i class="fa fa-calendar"></i> 15 DEZ de 2013</li>
+								</ul>
+								<span>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+								</span>
+							</div>
+              <div class="row">
+                <div class="col-sm-1"><img src="images/shop/ads/natura.png" style="width:80px; height:80px;" alt=""></div>
+                <div class="col-sm-1"><img src="images/shop/ads/boticario.png" style="width:80px; height:80px;" alt=""></div>
+                <div class="col-sm-1"><img src="images/shop/ads/jequiti.png" style="width:80px; height:80px;" alt=""></div>
+                <div class="col-sm-1"><img src="images/shop/ads/cartoon.png" style="width:80px; height:80px;" alt=""></div>
+                <div class="col-sm-1"><img src="images/shop/ads/anitta.png" style="width:80px; height:80px;" alt=""></div>
+                <div class="col-sm-1"><img src="images/shop/ads/havard.png" style="width:80px; height:80px;" alt=""></div>
+
+                <div class="col-sm-1"><img src="images/shop/ads/ifce.png" style="width:80px; height:80px;" alt=""></div>
+              </div>
+              <br>
+							<p>Essas empresas apoiam a beleza de ser mulher. Todas nos ajudam a prosseguir espalhando bons ares pelo mundo, seja com produtos, pesquisa ou divulgação. Confira nossas ofertas dos produtos Natura, Boticário e Jequiti e veja abaixo nossa parceria com a Cartoon Network, Anitta e Maísa Silva! </p>
+						</div>
+            <br><br>
+						<div class="single-blog-post">
+							<h3>Mídia</h3>
+							<div class="post-meta">
+								<ul>
+									<li><i class="fa fa-user"></i> Equipe Rocket</li>
+									<li><i class="fa fa-clock-o"></i> 02:33 pm</li>
+									<li><i class="fa fa-calendar"></i> 22 ABR de 2013</li>
+								</ul>
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+							</div>
+              <br><br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4-pLz7tUngQ" frameborder="0" allowfullscreen></iframe>
+              <br><br>
+              <p>Em 1998 a Cartoon Network entrou em parceria com a Elemento X quando Jane Fonda, então esposa de Ted Turner, se encantou com nossos produtos.</p>
+              <p>Para nos promover, a empresa criou um desenho contando nossa história em forma de animação, onde o Professor Utônio, acidentalmente deixou derrubar o Elemento X na poção da "Menina Perfeita" (uma mistura de açúcar, especiarias e várias coisas boas). Assim, o Elemento X deu a elas super poderes, e entre uma brincadeira e outra, elas tem que salvar a cidade fictícia norte-americana de Townsville de diversos monstros.</p>
+              <p>Na vida real, todas vocês, mulheres, são Meninas Perfeitas. Agora só falta o Elemento X para se tornarem SuperPoderosas.</p>
+              <br>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/FGViL3CYRwg" frameborder="0" allowfullscreen></iframe>
+							<p></p>
+              <br>
+              <iframe id="ytplayer" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/HVuhz0XiXdA?end=150&start=50" frameborder="0" allowfullscreen></iframe>
+
+						</div>
+            <br><br>
+						<div class="single-blog-post">
+							<h3>bate papo elmx</h3>
+							<div class="post-meta">
+								<ul>
+									<li><i class="fa fa-user"></i> Equipe Rocket</li>
+									<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+									<li><i class="fa fa-calendar"></i> DEC 5, 2013</li>
+								</ul>
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</span>
+							</div>
+              <p>Em nossa empresa não somos só prestadores de serviços, somos amigos dos nossos clientes. Fazemos perfumes personalizados de acordo com cada necessidade. Veja algumas conversas com nossas amigas Ronda Rousey, Dilma Rousseff e Joana D'Arc! Mande você também uma mensagem para nós e teremos o prazer de respondê-la!</p>
+              <br>
+              <div class="row">
+                <div class="col-sm-4"><img src="images/shop/ads/ronda.jpg" style="width:250px; height:410px;" alt=""></div>
+                <div class="col-sm-4"><img src="images/shop/ads/dilma.jpg" style="width:250px; height:410px;" alt=""></div>
+                <div class="col-sm-4"><img src="images/shop/ads/jojo.jpg" style="width:250px; height:410px;" alt=""></div>
+              </div>
+              <br>
+              <p>PS: Fique a vontade! Nossos estagiários falarão com você de acordo com sua linguagem para um atendimento ainda mais personalizado! 0/</p>
+						</div>
+<br><br><br>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <footer id="footer"><!--Footer-->
+
+  </footer><!--/Footer-->
+
+
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="MP Soluções">
+    <title>Quem Somos | Elemento X</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript">
+      $(function(){
+        $.ajax({
+          type:"get",
+          url: "header.html",
+          success:function(e){
+            $('#header').empty().append(e);
+          }
+        });
+        $.ajax({
+          type:"get",
+          url:"footer.html",
+          success:function(e){
+            $('#footer').empty().append(e);
+          }
+        });
+        $.ajax({
+          type:"get",
+          url:"left-sidebar.html",
+          success:function(c){
+            $('#left-sidebar').empty().append(c);
+          }
+        });
+      })
+    </script>
+</head><!--/head-->
+
+<!--Alterar main.css e pôr cores para vermelho!!
+Deixar o preto #000!  -->
+<body>
+  <div class="container">
+
+    <header id="header"><!--header-->
+    </header><!--/header-->
+
+	<section>
+		<div class="container">
+			<div class="row">
+        <div class="col-sm-2">
+					<div class="left-sidebar" id="left-sidebar">
+
+					</div> <!-- /left-sidebar -->
+				</div>
+				<div class="col-sm-10">
+					<div class="blog-post-area">
+            <br>
+            <h2 class="title text-center">ELEMENTO X</h2>
+						<div class="single-blog-post">
+							<h3>Nossa História</h3>
+							<div class="post-meta">
+								<ul>
+									<li><i class="fa fa-user"></i> Mac Doe</li>
+									<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+									<li><i class="fa fa-calendar"></i> DEC 5, 2013</li>
+								</ul>
+								<span>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+								</span>
+							</div>
+              <div style="height: 10em; position: relative">
+								<img src="images/home/elmxtransp.png" style="width:150px; height:150px; margin: 0;position: absolute;top: 50%;left: 50%; margin-right: -50%;transform: translate(-50%, -50%) " alt="">
+              </div>
+              <br>
+							<p>O ano era de 1400, Utônio Lafaiate, cientista caseiro, trabalhava em uma experiência um tanto peculiar: ele realizava experimento após experimento a fim de encontrar uma substância ou a mistura de várias substâncias que pudessem construir uma mulher perfeita.
+                <br><br>Em 1410, exatamente 10 anos após o início de sua pesquisa, enquanto Professor, nome o qual ele era reconhecido, mexia descontroladamente em sua atual experiência, ele acrescentou, acidentalmente, um elemento que modificou o rumo de sua pesquisa, porque esse elemento ao invés de construir a mulher perfeita, ele tornava qualquer mulher que o utilizasse implacável.
+                <br><br>A partir daí inicia-se a corrida rumo ao sucesso  do Professor Utônio, pois seus perfumes, maneira mais eficaz para alastrar o elemento, começaram a alcançar o mundo em um piscar de olhos. Após muitos anos de sucesso, esse elemento passou de geração em geração e está até hoje superando as expectativas iniciais, porquanto nós descobrimos o que podemos fazer com esse elemento.
+              <br><br>Em 1995, em parceria com a Cartoon Network, fora criado um desenho famoso chamado “As Meninas Superpoderosas” como marketing para nossa loja e nosso elemento X- se você não sabia, agora você sabe -, a partir desse desenho nós assumimos a liderança em quase todo o mundo, por possuirmos o poder que toda mulher deseja e estamos até hoje, graças a vocês, evoluindo.</p>
+						</div>
+					</div><!--/blog-post-area-->
+
+					<div class="rating-area">
+						<ul class="ratings">
+							<li class="rate-this">Classifique:</li>
+							<li>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+							</li>
+							<li class="color">(1945 votes)</li>
+						</ul>
+						<ul class="tag">
+							<li>TAG:</li>
+							<li><a class="color" href="">Sobre <span>/</span></a></li>
+							<li><a class="color" href="">Elemento X<span>/</span></a></li>
+							<li><a class="color" href="">História</a></li>
+						</ul>
+					</div><!--/rating-area-->
+
+					<div class="socials-share">
+						<a href=""><img src="images/blog/socials.png" alt=""></a>
+					</div><!--/socials-share-->
+
+					<div class="media commnets" id="amanda">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="images/blog/man-one.jpg" alt="">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Amanda Tavares</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<div class="blog-socials">
+								<ul>
+									<li><a href=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+								<a class="btn btn-primary" href="">Other Posts</a>
+							</div>
+						</div>
+					</div><!--Comments-->
+          <div class="media commnets" id="charles">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="images/blog/man-one.jpg" alt="">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Charles Filho</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<div class="blog-socials">
+								<ul>
+									<li><a href=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+								<a class="btn btn-primary" href="">Other Posts</a>
+							</div>
+						</div>
+					</div><!--Comments-->
+
+					<div class="response-area">
+						<h2>3 COMENTÁRIOS</h2>
+						<ul class="media-list">
+							<li class="media">
+								<a class="pull-left color" href="#">
+									<i class="fa fa-user color"></i>
+								</a>
+								<div class="media-body">
+									<ul class="sinlge-post-meta">
+										<li><i class="fa fa-user"></i>Agna Ferreira</li>
+										<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+										<li><i class="fa fa-calendar"></i> 15 DEZ de 2014</li>
+									</ul>
+									<p>Prefiro comprar aqui até mesmo os produtos de marcas que tem site próprio! Melhores preços e melhor atendimento! #SouFã</p>
+									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Replay</a>
+								</div>
+							</li>
+
+							<li class="media">
+                <a class="pull-left color" href="#">
+									<i class="fa fa-user color"></i>
+								</a>
+								<div class="media-body">
+									<ul class="sinlge-post-meta">
+										<li><i class="fa fa-user"></i>Joelma</li>
+										<li><i class="fa fa-clock-o"></i> 12:00 am</li>
+										<li><i class="fa fa-calendar"></i> 13 NOV de 2015</li>
+									</ul>
+									<p>"Eu agradeço a vocês da Elemento X pelos excelentes produtos. Me ajudaram a superar tudo e todos, quando uma mulher linda e famosa como eu passa por essas coisas o que ela mais precisa de alguém falando que ela é poderosa e superior a tudo , não existe ninguém melhor pra esse papel do que ela mesma. Eu me sinto assim agora, fui traída pela Lua e fiquei que nem um cavalo manco, mas depois da Elemento X tô andando é de eguinha pocotó. S2"</p>
+									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Replay</a>
+								</div>
+							</li>
+							<li class="media">
+                <a class="pull-left color" href="#">
+									<i class="fa fa-user color"></i>
+								</a>
+								<div class="media-body">
+									<ul class="sinlge-post-meta">
+										<li><i class="fa fa-user"></i>Janis Gallagher</li>
+										<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+										<li><i class="fa fa-calendar"></i> DEC 5, 2013</li>
+									</ul>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Replay</a>
+								</div>
+							</li>
+						</ul>
+					</div><!--/Response-area-->
+					<div class="replay-box">
+						<div class="row">
+							<div class="col-sm-4">
+								<h2>Leave a replay</h2>
+								<form>
+									<div class="blank-arrow">
+										<label>Your Name</label>
+									</div>
+									<span>*</span>
+									<input type="text" placeholder="write your name...">
+									<div class="blank-arrow">
+										<label>Email Address</label>
+									</div>
+									<span>*</span>
+									<input type="email" placeholder="your email address...">
+									<div class="blank-arrow">
+										<label>Web Site</label>
+									</div>
+									<input type="email" placeholder="current city...">
+								</form>
+							</div>
+							<div class="col-sm-8">
+								<div class="text-area">
+									<div class="blank-arrow">
+										<label>Your Name</label>
+									</div>
+									<span>*</span>
+									<textarea name="message" rows="11"></textarea>
+									<a class="btn btn-primary" href="">post comment</a>
+								</div>
+							</div>
+						</div>
+					</div><!--/Repaly Box-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <footer id="footer"><!--Footer-->
+
+	</footer><!--/Footer-->
+
+
+
+
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
