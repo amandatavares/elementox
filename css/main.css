@@ -1175,7 +1175,7 @@ h2.title {
 }
 
 
-#reviews {
+#details {
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -1327,7 +1327,7 @@ h2.title {
 }
 
 
-#reviews ul {
+#details ul , #reviews ul {
   background: #FFFFFF;
   border: 0 none;
   list-style: none outside none;
@@ -1335,11 +1335,11 @@ h2.title {
   padding: 0;
 }
 
-#reviews  ul  li {
+#details ul li , #reviews ul li {
 	display:inline-block;
 }
 
-#reviews ul li a {
+#details ul li a , #reviews ul li a {
   color: #000;
   display: block;
   font-family: 'Roboto', sans-serif;
@@ -1347,17 +1347,17 @@ h2.title {
   padding-right: 15px;
 }
 
-#reviews ul li a i{
+#details ul li a i, #reviews ul li a i {
 	color:#E50325;
 	padding-right:8px;
 }
 
-#reviews ul li a:hover{
+#details ul li a:hover, #reviews ul li a:hover{
 	background:#fff;
 	color:#E50325;
 }
 
-#reviews p{
+#details p, #reviews p {
 	color:#363432;
 }
 
@@ -1393,7 +1393,7 @@ h2.title {
   width: 99.5%;
 }
 
-#reviews button {
+#details button, #reviews button{
   background: #E50325;
   border: 0 none;
   border-radius: 0;
